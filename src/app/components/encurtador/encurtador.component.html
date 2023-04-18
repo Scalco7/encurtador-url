@@ -1,0 +1,21 @@
+<section>
+  <div class="box-top">
+    <h1>Encurtamento de URL e Links</h1>
+    <h2>Simplifique seus Links de forma simples e segura</h2>
+  </div>
+  <div class="box-bottom">
+    <div class="box-input">
+      <input
+        [(ngModel)]="linkUrl"
+        placeholder="Coloque o URL longo e encurta-o"
+        type="text"
+        name="linkUrl"
+      />
+      <button (click)="clicado(linkUrl)">Encurtar</button>
+    </div>
+    <p>E ainda é de graça</p>
+  </div>
+  <div class="box-resposta">
+    <p *ngIf="urlPequena">{{ urlPequena }}</p>
+  </div>
+</section>
